@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Prosjektdagbok &mdash; Praksis hos UiA</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <a href="index.html" class="logo-lockup" aria-label="Til forsiden">
+      <img class="logo-mark logo-mark-full" src="images/uia-logo.png" alt="Universitetet i Agder">
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Åpne meny" aria-expanded="false"><span></span></button>
+    <nav class="primary" id="primaryNav">
+      <a href="index.html">Hjem</a>
+      <a href="dagbok.html" class="active" aria-current="page">Prosjektdagbok</a>
+      <a href="status-1.html">Status 1</a>
+      <a href="status-2.html">Status 2</a>
+      <a href="refleksjon.html">Avsluttende refleksjon</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+  <div class="page-header">
+    <div class="kicker">Logg</div>
+    <h1>Prosjektdagbok</h1>
+    <p>Fortløpende notater fra praksisperioden: hva jeg har jobbet med, valg jeg har tatt, og ting jeg har lært underveis.</p>
+    <nav class="week-nav">
+      <a href="#uke-1" class="week-nav-item active" data-week="uke-1">Uke 1</a>
+      <a href="#uke-2" class="week-nav-item" data-week="uke-2">Uke 2</a>
+      <a href="#uke-3" class="week-nav-item" data-week="uke-3">Uke 3</a>
+      <a href="#uke-4-8" class="week-nav-item" data-week="uke-4-8">Uke 4–8</a>
+      <a href="#uke-9" class="week-nav-item" data-week="uke-9">Uke 9</a>
+    </nav>
+  </div>
+  <section class="block" style="border-top:none; padding-top:0;">
+    <div class="task-card journal-card week-panel active" id="uke-1">
+      <div class="kicker" style="margin-bottom:6px;">Uke 1</div>
+      <h3 style="font-family:'Fraunces',serif; font-size:1.3rem; margin-bottom:16px;">Kartlegging og prosjektoppstart</h3>
+      <ul class="goal-list" style="margin-bottom:22px;">
+        <li>Kartlagt prosjektets mål og behov sammen med Elin Marie, Tobias og Benjamin</li>
+        <li>Sett nærmere på hvorfor UiA ønsker å utvikle en egen chatbot-tjeneste</li>
+        <li>Planlagt brukerundersøkelse for å kartlegge studentenes behov og forventninger</li>
+        <li>Fått tilgang til Microsoft Copilot Studio og startet opplæring i verktøyet</li>
+        <li>Utforsket hvordan AI-agenter og Copilot Workflows kan brukes til mer enn bare chatbot-tjenesten</li>
+      </ul>
+      <div class="journal-toggle">
+        <button type="button" class="journal-open-btn">Vis mer</button>
+        <div class="journal-more">
+          <p>Denne uken har i hovedsak vært preget av oppstart, kartlegging og det å få en felles forståelse av hva vi ønsker å utvikle. Jeg hadde et møte sammen med Elin Marie, Tobias og Benjamin hvor vi gikk gjennom prosjektet, behovet for tjenesten og hvilke muligheter vi ser for videre utvikling.</p>
+          <p>Bakgrunnen for prosjektet er blant annet en studentundersøkelse som UiA tidligere har gjennomført, hvor det har kommet frem et behov for å gjøre det enklere for studenter og andre brukere å finne informasjon på universitetets nettsider. Jeg skal sette meg nærmere inn i resultatene fra denne undersøkelsen, men ønsker også å gjennomføre en egen brukerundersøkelse. Tanken er å gjøre denne så enkel og tilgjengelig som mulig, blant annet gjennom oppslag på campus og deling i relevante Facebook-grupper og Discord-kanaler. På den måten kan vi få bedre innsikt i hva brukerne faktisk trenger, uten å gjøre undersøkelsen til en stor belastning i en allerede travel studiehverdag.</p>
+          <p>Vi diskuterte også hvordan UiA ønsker å være en aktør som ligger langt fremme innen KI-utvikling, og så på hvordan andre universiteter har forsøkt å løse lignende behov. I flere tilfeller har utviklingen blitt satt ut til eksterne aktører, noe som gjør det interessant å undersøke hvilke muligheter UiA selv har til å utvikle og videreutvikle slike løsninger.</p>
+          <p>Jeg har denne uken også fått tilgang til Microsoft Copilot Studio og Azure, som er verktøyene vi skal arbeide videre med. En viktig del av starten blir derfor å sette meg inn i hvordan verktøyene fungerer gjennom opplæringsmateriell og praktisk testing. Jeg ønsker å forstå mulighetene og begrensningene i verktøyet før jeg begynner å utvikle konkrete løsninger.</p>
+          <p>Under møtet fikk vi også demonstrert hvordan AI-agenter kan brukes til andre oppgaver enn selve chatbot-tjenesten. Vi så blant annet hvordan en agent kunne booke et møterom, invitere riktige personer og skrive en møtebeskrivelse basert på en enkel prompt. Dette gjorde det tydelig at prosjektet kan ha flere mulige bruksområder enn vi først hadde tenkt.</p>
+          <p>Siden prosjektet fortsatt er i en tidlig fase, har jeg fått relativt frie tøyler til å utforske ulike muligheter. Dersom jeg oppdager andre nyttige bruksområder for Copilot eller Workflows underveis, er det derfor ønskelig at jeg undersøker disse nærmere og vurderer om de kan være relevante for UiA.</p>
+          <p>En viktig refleksjon jeg tar med meg fra denne første uken, er hvor viktig det er å kartlegge behovet før man begynner å bygge løsningen. Dette er noe jeg kjenner igjen fra tidligere fag innen blant annet prosjektledelse, objektorientert utvikling og design. Det er lett å begynne å utvikle fordi man har en idé om hva man ønsker å lage, men dersom man ikke først forstår problemet, brukerne og mulighetene man har tilgjengelig, risikerer man å bruke mye tid på å utvikle noe som ikke faktisk løser det riktige problemet. Derfor kommer behovskartlegging og utforskning til å være et viktig fokus for meg i starten av prosjektet.</p>
+          <button type="button" class="journal-close-btn">Vis mindre</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="task-card journal-card week-panel" id="uke-2">
+      <div class="kicker" style="margin-bottom:6px;">Uke 2</div>
+      <h3 style="font-family:'Fraunces',serif; font-size:1.3rem; margin-bottom:16px;">Utforsking av Copilot Studio og brukerbehov</h3>
+      <ul class="goal-list" style="margin-bottom:22px;">
+        <li>Utforsket flere muligheter i Microsoft Copilot Studio gjennom kurs og videoer</li>
+        <li>Sett nærmere på hvordan flows og agenter kan kobles sammen med verktøy og automatiseringer</li>
+        <li>Evaluert hvor godt agenten svarer, og om den håndterer sensitiv informasjon trygt</li>
+        <li>Sendt ut en brukerundersøkelse til studenter og ansatte</li>
+        <li>Sammenlignet UiAs nettsider med andre norske universiteter sine KI-tjenester</li>
+      </ul>
+      <div class="journal-toggle">
+        <button type="button" class="journal-open-btn">Vis mer</button>
+        <div class="journal-more">
+          <p>Denne uken har jeg videre utforsket mulighetene i Microsoft Copilot Studio. Jeg har fulgt Microsoft-kurs og sett relevante YouTube-videoer for å få en bedre forståelse av verktøyene og funksjonene i plattformen.</p>
+          <p>Jeg har særlig sett nærmere på flows og agenter, og hvordan disse kan kobles sammen med ulike verktøy og automatiseringer. Dette gjør det mulig å utvikle funksjoner som ikke er tilgjengelige som vanlige innstillinger eller innebygde funksjoner i Copilot Studio.</p>
+          <p>Vi opplever at agenten allerede kan besvare mange spørsmål fra studenter og ansatte. Derfor har vi arbeidet med å evaluere hvor godt den svarer på ulike henvendelser, om den håndterer sensitiv informasjon på en trygg måte, og om det finnes risiko for at den deler informasjon den ikke burde dele.</p>
+          <p>Mot slutten av dagen laget jeg også en brukerundersøkelse som ble sendt ut til studenter og ansatte ved universitetet. Målet er å få bedre innsikt i hvilke behov brukerne faktisk har, og hva de forventer av en slik chatbot.</p>
+          <p>I starten av dagen undersøkte jeg nettsidene til flere andre norske universiteter for å se om de hadde en lignende KI-tjeneste. Sammenlignet med disse fremstår UiAs nettsider som godt utviklet og oversiktlige. Flere av de andre nettstedene inneholder mye informasjon og tilbyr mange ulike løsninger, men det kan være vanskelig å finne frem fordi brukeren må navigere gjennom mange lenker. UiA har derfor et godt utgangspunkt for å bruke en chatbot som kan gjøre det enda enklere for studenter, ansatte og eksterne brukere å finne riktig informasjon.</p>
+          <button type="button" class="journal-close-btn">Vis mindre</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="task-card journal-card week-panel" id="uke-3">
+      <div class="kicker" style="margin-bottom:6px;">Uke 3</div>
+      <h3 style="font-family:'Fraunces',serif; font-size:1.3rem; margin-bottom:16px;">Analyse av brukerundersøkelsen og teknisk videreutvikling</h3>
+      <ul class="goal-list" style="margin-bottom:22px;">
+        <li>Analysert resultatene fra brukerundersøkelsen og brukt dem til å forme tjenesten videre</li>
+        <li>Filmet en statusvideo sammen med kollegene</li>
+        <li>Startet teknisk arbeid med en flow som skal oppsummere samtaler og opprette saker automatisk</li>
+        <li>Fortsatte evalueringen av agenten, med fokus på mulige sikkerhetshull</li>
+      </ul>
+      <div class="journal-toggle">
+        <button type="button" class="journal-open-btn">Vis mer</button>
+        <div class="journal-more">
+          <p>Denne uken brukte jeg tid på å analysere resultatene fra brukerundersøkelsen og forme tjenesten ut fra dataene vi samlet inn. Et funn som overrasket oss, var at mange hadde en positiv holdning til en chatbot. Den positive holdningen kan muligens henge sammen med den raske utviklingen innen KI-agenter de siste årene.</p>
+          <p>Jeg filmet også en statusvideo sammen med kollegene mine. I tillegg startet jeg på det tekniske arbeidet med å lage en flow og utvikle en funksjon for KI-agenten. Målet er at agenten skal kunne oppsummere samtalen med brukeren og automatisk opprette en sak når den ikke klarer å løse henvendelsen selv.</p>
+          <p>Jeg brukte mye tid på dette arbeidet, og jeg undersøker fortsatt om funksjonen er mulig å gjennomføre innenfor rammene av Copilot Studio. Det er derfor fortsatt usikkert om dette er noe agenten kan gjøre, eller om det krever en annen teknisk løsning.</p>
+          <p>Videre fortsatte jeg med evalueringen av agenten, med fokus på å avdekke eventuelle sikkerhetshull.</p>
+          <button type="button" class="journal-close-btn">Vis mindre</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="task-card journal-card week-panel" id="uke-4-8">
+      <div class="kicker" style="margin-bottom:6px;">Uke 4–8</div>
+      <h3 style="font-family:'Fraunces',serif; font-size:1.3rem; margin-bottom:16px;">Prioriteringer, kunnskapskilder og samarbeid på tvers</h3>
+      <ul class="goal-list" style="margin-bottom:22px;">
+        <li>Skrotet funksjonen for oppsummering og videresending av samtaler til UiA-hjelp etter en ny prioritering</li>
+        <li>Tatt kontakt med personvernombudet for å gjennomføre en ROS-analyse før publisering til testing</li>
+        <li>Automatisert konvertering og sortering av kunnskapskilder til Word-filer med et skript laget med Claude</li>
+        <li>Brukt Power Automate og Copilot flows i arbeidet med funksjonen jeg forsøkte å utvikle</li>
+        <li>Møtt en annen avdeling på UiA som har en lignende løsning, og sammenlignet de to prosjektene</li>
+      </ul>
+      <div class="journal-toggle">
+        <button type="button" class="journal-open-btn">Vis mer</button>
+        <div class="journal-more">
+          <p>Det har vært travelt de siste ukene, og jeg har derfor glemt å legge inn jevnlige oppdateringer. Jeg slår derfor sammen de siste ukene og oppsummerer arbeidet mitt.</p>
+          <p>Det går veldig bra med prosjektet. Jeg har fått mye tillit og frihet til å styre arbeidsdagene mine slik jeg selv ønsker, noe som har gjort at jeg har kunnet jobbe ganske selvstendig med ulike deler av løsningen.</p>
+          <p>De siste ukene har jeg blant annet jobbet med å utvikle en funksjon som skulle oppsummere samtaler der AI-agenten ikke klarte å løse studentens spørsmål, og deretter sende oppsummeringen videre til UiA-hjelp på vegne av studenten. Til dette brukte jeg Power Automate og Copilot flows. Vi fant imidlertid ut at dette ikke var en funksjon vi burde prioritere. Det krevde også en del administrative tilganger for å kunne gjennomføres, så vi valgte å skrote ideen.</p>
+          <p>Vi opplever nå at hovedløsningen begynner å bli klar for publisering til testing. Jeg har derfor tatt kontakt med personvernombudet, og neste uke skal vi ha et møte for å gjennomføre en ROS-analyse.</p>
+          <p>En annen større oppgave har vært å samle og strukturere kunnskapskilder som lå spredt på ulike steder. Disse måtte konverteres til Word-filer og lastes opp til et SharePoint-bibliotek. Dette var i utgangspunktet en svært tidkrevende og manuell prosess, så jeg automatiserte arbeidet ved å lage et skript med Claude. Skriptet konverterer og organiserer dokumentene automatisk i kategoriserte mapper. Det eneste som gjenstår nå, er å laste dokumentene opp til SharePoint.</p>
+          <p>I løpet av høstferien oppdaget vi at en annen avdeling på UiA allerede hadde utviklet en lignende løsning. Jeg gjorde derfor litt research, fant ut hvem som hadde utviklet den, og arrangerte et møte for å bli bedre kjent med prosjektet deres. Vi ga dem også tilgang til å teste vår løsning, slik at vi kunne sammenligne de to prosjektene.</p>
+          <p>Løsningen de har, er en ferdig utviklet tjeneste som UiA kjøper fra en ekstern leverandør. Dette gjorde at vi begynte å diskutere om det kunne være interessant å undersøke hvordan en tilsvarende tjeneste kunne utvikles og driftes internt. Samtidig viser dette hvor viktig kommunikasjon mellom avdelinger er. Her har to forskjellige avdelinger i praksis jobbet med svært like løsninger uten å vite om hverandres arbeid. Vi kan derfor ha brukt betydelig tid på å utvikle noe som kanskje ikke vil bli tatt i bruk, fordi det allerede finnes en løsning som dekker mye av det samme behovet.</p>
+          <button type="button" class="journal-close-btn">Vis mindre</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="task-card journal-card week-panel" id="uke-9">
+      <div class="kicker" style="margin-bottom:6px;">Uke 9</div>
+      <h3 style="font-family:'Fraunces',serif; font-size:1.15rem; margin-bottom:8px; color: var(--ink-soft);">Kommer snart</h3>
+      <p style="margin-bottom:0;">Innholdet legges til fortløpende etter hvert som ting endres og prosjektet utvikler seg.</p>
+    </div>
+  </section>
+</main>
+
+<script src="js/main.js"></script>
+
+</body>
+</html>
