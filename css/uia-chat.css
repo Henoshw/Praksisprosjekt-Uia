@@ -1,0 +1,72 @@
+/* UiA Assistenten: chatboble nede i høyre hjørne (lastes av js/uia-chat.js) */
+
+#uia-chat-root{
+  --uia-chat-color: var(--red, #c8102e);
+  --uia-chat-color-deep: var(--red-deep, #8f0b21);
+  position: fixed; right: 20px; bottom: 20px; z-index: 9999;
+  font-family: "Inter", -apple-system, sans-serif;
+}
+
+/* Boble */
+.uia-chat-toggle{
+  width: 60px; height: 60px; border-radius: 50%; border: none; padding: 0; cursor: pointer;
+  background: var(--uia-chat-color); color: #fff;
+  display: flex; align-items: center; justify-content: center;
+  box-shadow: 0 8px 24px -6px rgba(28,27,26,.45);
+  transition: background .2s, transform .2s;
+}
+.uia-chat-toggle:hover{ background: var(--uia-chat-color-deep); transform: scale(1.05); }
+.uia-chat-toggle svg{ width: 28px; height: 28px; }
+.uia-chat-toggle:focus-visible,
+.uia-chat-close:focus-visible{ outline: 2px solid var(--uia-chat-color); outline-offset: 3px; }
+
+/* Vindu */
+.uia-chat-window{
+  position: absolute; right: 0; bottom: 76px; width: 420px; height: 640px;
+  max-width: calc(100vw - 40px);
+  max-height: calc(100vh - 110px);
+  max-height: calc(100dvh - 110px);
+  background: #fff; border-radius: 16px; overflow: hidden;
+  display: flex; flex-direction: column;
+  box-shadow: 0 20px 45px -12px rgba(28,27,26,.4);
+}
+.uia-chat-window[hidden]{ display: none; }
+
+.uia-chat-header{
+  background: var(--uia-chat-color); color: #fff;
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 12px 12px 12px 16px;
+}
+.uia-chat-title{ margin: 0; font-size: 1rem; font-weight: 600; color: #fff; line-height: 1.3; }
+.uia-chat-close{
+  width: 32px; height: 32px; border-radius: 50%; border: none; cursor: pointer;
+  background: none; color: #fff; font-size: 1.1rem; line-height: 1;
+}
+.uia-chat-close:hover{ background: rgba(255,255,255,.18); }
+
+.uia-chat-body{ flex: 1; min-height: 0; display: flex; }
+.uia-chat-body > *{ flex: 1; min-width: 0; }
+.uia-chat-status{ align-self: center; margin: 0; padding: 0 20px; text-align: center; color: #55504b; font-size: .9rem; }
+
+/* Web Chat: større skrivefelt (16px hindrer også at iPhone zoomer inn) */
+.uia-chat-webchat .webchat__send-box-text-box__input,
+.uia-chat-webchat .webchat__send-box-text-box__text-area{ font-size: 16px; line-height: 1.4; }
+.uia-chat-webchat .webchat__send-box__main{ padding: 6px 4px; }
+
+/* Nøytraliserer sidens globale p- og img-stiler inne i meldingene */
+.uia-chat-webchat p{ color: inherit; max-width: none; margin: 0 0 .5em; }
+.uia-chat-webchat p:last-child{ margin-bottom: 0; }
+.uia-chat-webchat a{ color: var(--uia-chat-color); text-decoration: none; overflow-wrap: anywhere; }
+.uia-chat-webchat a:hover{ text-decoration: underline; }
+.uia-chat-webchat a img,
+.uia-chat-webchat a svg{
+  display: inline-block; width: .8em; height: .8em; max-width: none;
+  margin-left: .2em; vertical-align: baseline;
+}
+.uia-chat-webchat sup,
+.uia-chat-webchat .webchat__render-markdown__citation{ white-space: nowrap; }
+
+/* Mobil: vinduet fyller nesten hele bredden */
+@media (max-width: 479px){
+  .uia-chat-window{ position: fixed; left: 10px; right: 10px; bottom: 85px; width: auto; max-width: none; }
+}
