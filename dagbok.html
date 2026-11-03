@@ -35,6 +35,9 @@
       <a href="#uke-3" class="week-nav-item" data-week="uke-3">Uke 3</a>
       <a href="#uke-4-8" class="week-nav-item" data-week="uke-4-8">Uke 4–8</a>
       <a href="#uke-9" class="week-nav-item" data-week="uke-9">Uke 9</a>
+      <a href="#uke-10" class="week-nav-item" data-week="uke-10">Uke 10</a>
+      <a href="#uke-11" class="week-nav-item" data-week="uke-11">Uke 11</a>
+      <a href="#uke-12" class="week-nav-item" data-week="uke-12">Uke 12</a>
     </nav>
   </div>
   <section class="block" style="border-top:none; padding-top:0;">
@@ -134,8 +137,68 @@
 
     <div class="task-card journal-card week-panel" id="uke-9">
       <div class="kicker" style="margin-bottom:6px;">Uke 9</div>
+      <h3 style="font-family:'Fraunces',serif; font-size:1.3rem; margin-bottom:16px;">Demoside og forberedelser til en testversjon</h3>
+      <ul class="goal-list" style="margin-bottom:22px;">
+        <li>Satt meg enda bedre inn i hvordan modellen bak agenten fungerer</li>
+        <li>Jobbet med å få en demoside av agenten til å fungere</li>
+        <li>Forberedt publisering av en testversjon</li>
+        <li>Feilsøkt et problem som viste seg å ligge hos Microsoft</li>
+      </ul>
+      <div class="journal-toggle">
+        <button type="button" class="journal-open-btn">Vis mer</button>
+        <div class="journal-more">
+          <p>Denne uken brukte jeg mye tid på å forstå modellen enda bedre, og på å få en demoside av agenten til å fungere. Demosiden er et viktig steg i forberedelsene til å publisere en testversjon, slik at flere kan prøve løsningen.</p>
+          <p>Underveis støtte jeg på et problem som gjorde at demosiden ikke fungerte som den skulle. Jeg brukte mye tid på feilsøking før jeg fant ut at feilen lå hos Microsoft, og ikke i vårt eget oppsett. Problemet løste seg mot slutten av dagen.</p>
+          <button type="button" class="journal-close-btn">Vis mindre</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="task-card journal-card week-panel" id="uke-10">
+      <div class="kicker" style="margin-bottom:6px;">Uke 10</div>
+      <h3 style="font-family:'Fraunces',serif; font-size:1.3rem; margin-bottom:16px;">ROS-analyse og Microsofts innebygde innholdsfilter</h3>
+      <ul class="goal-list" style="margin-bottom:22px;">
+        <li>Gjennomført en ROS-analyse sammen med personvernansvarlig</li>
+        <li>Fått en rekke tilbakemeldinger og blitt bevisst på sikkerhetsforhold jeg ikke hadde tenkt på</li>
+        <li>Oppdaget at agenten nekter å svare på spørsmål om vold, seksualitet og lignende temaer</li>
+        <li>Funnet ut at Microsofts innebygde innholdsfilter går foran mine egne instruksjoner</li>
+      </ul>
+      <div class="journal-toggle">
+        <button type="button" class="journal-open-btn">Vis mer</button>
+        <div class="journal-more">
+          <p>Denne uken gjennomførte jeg en ROS-analyse (risiko- og sårbarhetsanalyse) sammen med personvernansvarlig. Vi fikk en rekke nyttige tilbakemeldinger, og jeg ble bevisst på flere sikkerhetsmessige forhold jeg ikke hadde tenkt på tidligere.</p>
+          <p>Under testingen oppdaget jeg også at agenten nekter å svare på spørsmål som handler om vold, seksualitet og lignende temaer. Dette skjedde til tross for at jeg allerede hadde spesifisert i instruksjonene hvordan den skulle håndtere slike spørsmål.</p>
+          <p>Da jeg undersøkte dette nærmere, fant jeg ut at agenten ikke fulgte instruksjonene mine fordi innholdsfilteret som Microsoft automatisk bygger inn i agenten, går foran dem. Dette er en begrensning i plattformen som jeg ikke kan komme rundt, og som vi må ta hensyn til i det videre arbeidet.</p>
+          <button type="button" class="journal-close-btn">Vis mindre</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="task-card journal-card week-panel" id="uke-11">
+      <div class="kicker" style="margin-bottom:6px;">Uke 11</div>
+      <h3 style="font-family:'Fraunces',serif; font-size:1.3rem; margin-bottom:16px;">Grundigere testing med egne evalueringskriterier</h3>
+      <ul class="goal-list" style="margin-bottom:22px;">
+        <li>Satt i gang grundigere testing basert på ROS-analysen, tilbakemeldingene fra personvernansvarlig og et møte med webutvikleren</li>
+        <li>Kjørt realistiske, generelle spørsmål uavhengig av brukerstatus</li>
+        <li>Testet fire kategorier: studenter, ansatte, gjester og penetrasjonstesting</li>
+        <li>Kjørt omtrent 300–400 testspørsmål i hver kategori</li>
+        <li>Laget egne evalueringskriterier fordi Microsofts innebygde kriterier ikke var gode nok</li>
+      </ul>
+      <div class="journal-toggle">
+        <button type="button" class="journal-open-btn">Vis mer</button>
+        <div class="journal-more">
+          <p>Med bakgrunn i tilbakemeldingene fra personvernansvarlig, ROS-analysen og et møte med webutvikleren satte jeg i gang arbeidet med å teste løsningen enda grundigere.</p>
+          <p>Til å begynne med kjørte jeg en runde med realistiske, generelle spørsmål, uavhengig av hvem brukeren er. Deretter delte jeg testingen inn i fire kategorier: studenter, ansatte, gjester og penetrasjonstesting. I hver kategori kjørte jeg omtrent 300 til 400 testspørsmål.</p>
+          <p>Etter hvert oppdaget jeg at Microsofts innebygde evalueringskriterier ikke var gode nok til å måle det jeg faktisk var ute etter. Jeg laget derfor mine egne kriterier og evaluerte agenten ut fra disse.</p>
+          <button type="button" class="journal-close-btn">Vis mindre</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="task-card journal-card week-panel" id="uke-12">
+      <div class="kicker" style="margin-bottom:6px;">Uke 12</div>
       <h3 style="font-family:'Fraunces',serif; font-size:1.15rem; margin-bottom:8px; color: var(--ink-soft);">Kommer snart</h3>
-      <p style="margin-bottom:0;">Innholdet legges til fortløpende etter hvert som ting endres og prosjektet utvikler seg.</p>
+      <p style="margin-bottom:0;">Innholdet legges til fortløpende etter hvert som ting endres og prosjektet utvikler seg. En oppsummering av de siste ukene finner du i <a href="status-2.html">Status 2</a>.</p>
     </div>
   </section>
 </main>

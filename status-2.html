@@ -26,15 +26,151 @@
 
 <main class="wrap">
   <div class="page-header">
-    <div class="kicker">Milepæl 2</div>
+    <div class="kicker">Milepæl 2 &middot; Uke 12</div>
     <h1>Status 2</h1>
-    <p>Oppsummering av fremdrift, funn og eventuelle justeringer ved andre statuspunkt i praksisperioden.</p>
+    <p>Oppsummering av fremdrift, funn og justeringer ved andre statuspunkt i praksisperioden.</p>
   </div>
+
   <section class="block" style="border-top:none; padding-top:0;">
-    <div class="empty-state">
-      <div class="mark">03</div>
-      <h3>Kommer ved andre milepæl</h3>
-      <p>Denne siden oppdateres når det er tid for andre statusrapportering.</p>
+    <div class="two-col">
+      <div>
+        <div class="kicker">Siden sist</div>
+        <h2>Fra utvikling til testing og sikkerhet</h2>
+      </div>
+      <div>
+        <p>Siden forrige statusrapport har prosjektet gått fra å handle om å bygge og utforske agenten, til å handle om å gjøre den klar for bruk. De siste ukene har jeg derfor hatt mest fokus på prioriteringer, sikkerhet og grundig testing.</p>
+        <p>Målet er at vi skal være trygge på at agenten svarer riktig, holder seg innenfor rammene sine og oppfører seg forutsigbart før den publiseres som en testversjon.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="block">
+    <div class="kicker">Uke 4–11</div>
+    <h2>Dette har jeg jobbet med</h2>
+    <div class="step-grid">
+      <div class="step-card">
+        <div class="step-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" width="22" height="22"><path d="M4 6h16"/><path d="M4 12h10"/><path d="M4 18h6"/></svg>
+        </div>
+        <h3>Prioritering</h3>
+        <p>Skrotet funksjonen for å oppsummere og videresende samtaler til UiA-hjelp. Den ble ikke prioritert, og krevde administrative tilganger.</p>
+      </div>
+      <div class="step-card">
+        <div class="step-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" width="22" height="22"><path d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
+        </div>
+        <h3>Kunnskapskilder</h3>
+        <p>Automatiserte konvertering og sortering av spredte kunnskapskilder til Word-filer med et skript laget med Claude.</p>
+      </div>
+      <div class="step-card">
+        <div class="step-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" width="22" height="22"><circle cx="8" cy="8" r="3"/><circle cx="16" cy="16" r="3"/><path d="M10.5 10.5l3 3"/></svg>
+        </div>
+        <h3>Samarbeid på tvers</h3>
+        <p>Møtte en annen avdeling ved UiA som bruker en innkjøpt, lignende løsning, og sammenlignet de to prosjektene.</p>
+      </div>
+      <div class="step-card">
+        <div class="step-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" width="22" height="22"><rect x="3" y="4" width="18" height="13" rx="2"/><path d="M8 21h8"/><path d="M12 17v4"/></svg>
+        </div>
+        <h3>Demoside</h3>
+        <p>Fikk en demoside av agenten til å fungere som forberedelse til en testversjon, etter å ha feilsøkt en feil som lå hos Microsoft.</p>
+      </div>
+      <div class="step-card">
+        <div class="step-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" width="22" height="22"><path d="M12 3l8 3v6c0 4.5-3.4 8.3-8 9-4.6-.7-8-4.5-8-9V6z"/><path d="M9 12l2 2 4-4"/></svg>
+        </div>
+        <h3>ROS-analyse</h3>
+        <p>Gjennomførte en risiko- og sårbarhetsanalyse sammen med personvernansvarlig, og fikk en rekke nyttige tilbakemeldinger.</p>
+      </div>
+      <div class="step-card">
+        <div class="step-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" width="22" height="22"><path d="M9 3h6"/><path d="M10 3v6l-5 9a2 2 0 0 0 1.8 3h10.4a2 2 0 0 0 1.8-3l-5-9V3"/></svg>
+        </div>
+        <h3>Systematisk testing</h3>
+        <p>Testet agenten med 300–400 spørsmål i hver av fire brukerkategorier, vurdert etter egne evalueringskriterier.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="block">
+    <div class="kicker">Evaluering</div>
+    <h2>Slik tester jeg agenten</h2>
+    <p>Med utgangspunkt i ROS-analysen, tilbakemeldingene fra personvernansvarlig og et møte med webutvikleren satte jeg i gang en grundigere testrunde. Først kjørte jeg realistiske, generelle spørsmål uavhengig av brukerstatus. Deretter delte jeg testingen inn i fire kategorier:</p>
+    <div class="monitor-card">
+      <div class="monitor-head">
+        <div class="monitor-icon">
+          <svg viewBox="0 0 24 24" width="22" height="22"><line x1="3" y1="20" x2="21" y2="20" stroke="#fff" stroke-width="1.6" stroke-linecap="round"/><rect x="6" y="11" width="3" height="7" rx="1" fill="#fff"/><rect x="11" y="6" width="3" height="12" rx="1" fill="#fff"/><rect x="16" y="13" width="3" height="5" rx="1" fill="#fff"/></svg>
+        </div>
+        <div>
+          <div class="monitor-title">Testkategorier</div>
+          <div class="monitor-sub">Antall testspørsmål per kategori</div>
+        </div>
+      </div>
+      <div class="monitor-row">
+        <div class="monitor-row-top">
+          <span class="name">Studenter</span>
+          <span class="meta">Spørsmål fra studentens perspektiv</span>
+          <span class="score">300–400</span>
+        </div>
+      </div>
+      <div class="monitor-row">
+        <div class="monitor-row-top">
+          <span class="name">Ansatte</span>
+          <span class="meta">Spørsmål fra ansattes perspektiv</span>
+          <span class="score">300–400</span>
+        </div>
+      </div>
+      <div class="monitor-row">
+        <div class="monitor-row-top">
+          <span class="name">Gjester</span>
+          <span class="meta">Besøkende uten tilknytning til UiA</span>
+          <span class="score">300–400</span>
+        </div>
+      </div>
+      <div class="monitor-row">
+        <div class="monitor-row-top">
+          <span class="name">Penetrasjonstesting</span>
+          <span class="meta">Forsøk på å utfordre rammer og sikkerhet</span>
+          <span class="score">300–400</span>
+        </div>
+      </div>
+      <p class="monitor-note">Omtrentlig antall testspørsmål kjørt i hver kategori i uke 11.</p>
+    </div>
+    <p style="margin-top:26px;">Underveis oppdaget jeg at Microsofts innebygde evalueringskriterier ikke var gode nok til å måle det jeg faktisk var ute etter. Jeg laget derfor egne kriterier og evaluerte agenten ut fra disse.</p>
+  </section>
+
+  <section class="block">
+    <div class="two-col">
+      <div>
+        <div class="kicker">Funn og justeringer</div>
+        <h2>Hva jeg har lært</h2>
+      </div>
+      <div class="task-card">
+        <ul class="goal-list" style="margin-top:0;">
+          <li><span><strong>Plattformen setter grenser.</strong> Agenten nekter å svare på spørsmål om vold, seksualitet og lignende temaer, selv om instruksjonene mine sier hvordan den skal håndtere dem. Årsaken er Microsofts innebygde innholdsfilter, som går foran mine instruksjoner og ikke kan omgås.</span></li>
+          <li><span><strong>Sikkerhet krever flere øyne.</strong> ROS-analysen gjorde meg bevisst på sikkerhetsforhold jeg ikke hadde tenkt på selv.</span></li>
+          <li><span><strong>Standardverktøy strekker ikke alltid til.</strong> De innebygde evalueringskriteriene målte ikke det jeg trengte, så jeg laget mine egne.</span></li>
+          <li><span><strong>Ikke alle feil ligger i eget oppsett.</strong> Problemet med demosiden viste seg å ligge hos Microsoft.</span></li>
+          <li><span><strong>Kommunikasjon på tvers er avgjørende.</strong> To avdelinger hadde jobbet med svært like løsninger uten å vite om hverandres arbeid.</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="block">
+    <div class="two-col">
+      <div>
+        <div class="kicker">Veien videre</div>
+        <h2>Neste steg</h2>
+      </div>
+      <div>
+        <ul class="goal-list" style="margin-top:0;">
+          <li>Bruke resultatene fra testingen til å forbedre agentens instruksjoner og kunnskapskilder</li>
+          <li>Publisere en testversjon av agenten</li>
+        </ul>
+        <p style="margin-top:22px;">Les mer om hver uke i <a href="dagbok.html">prosjektdagboken</a>.</p>
+      </div>
     </div>
   </section>
 </main>
