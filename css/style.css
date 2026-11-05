@@ -34,6 +34,7 @@ p{ margin: 0 0 1em; color: var(--ink-soft); max-width: 62ch; }
 a{ color: inherit; }
 img{ max-width:100%; display:block; }
 .wrap{ max-width: var(--max); margin: 0 auto; padding: 0 28px; }
+.wrap-narrow{ max-width: 880px; }
 
 /* focus visibility */
 a:focus-visible, button:focus-visible{
@@ -178,6 +179,7 @@ section.block .kicker{
 .task-card p{ color: var(--ink); max-width: 68ch; }
 .task-card p:last-child{ margin-bottom:0; }
 .journal-card{ max-width: 720px; }
+.journal-card-wide{ max-width: none; }
 
 .week-nav{ display:flex; gap:8px; margin-top:18px; flex-wrap:wrap; }
 .week-nav-item{
@@ -313,6 +315,8 @@ footer .fine{ margin-top:28px; font-size:.85rem; color:#8b857e; }
 .split-row{ display:grid; grid-template-columns: 1.2fr .8fr; gap:40px; align-items:start; }
 .text-block-divider{ margin-top:32px; padding-top:32px; border-top:1px solid var(--line); }
 .split-media .interview-figure{ max-width:100%; margin:16px 0 0; }
+.split-row-even{ grid-template-columns: minmax(0,1fr) minmax(0,1fr); }
+.split-media .screenshot-figure:first-child{ margin-top:0; }
 @media (max-width: 860px){
   .split-row{ grid-template-columns:1fr; }
 }
